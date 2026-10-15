@@ -5,10 +5,10 @@ export default function InfoPage() {
 
   return (
     <section aria-labelledby="info-title">
-      <h1 id="info-title" className="text-3xl font-bold">
+      <h1 id="info-title" className="font-serif text-5xl leading-tight">
         {t('nav.info')}
       </h1>
-      <p className="mt-2">{t('placeholder')}</p>
+      <p className="mt-3 text-muted">{t('placeholder')}</p>
     </section>
   );
 }

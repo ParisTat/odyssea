@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import App from './App';
 
@@ -38,6 +38,12 @@ describe('App routing', () => {
     const active = nav.querySelectorAll('[aria-current="page"]');
     expect(active).toHaveLength(1);
     expect(active[0]).toHaveTextContent('Budget');
+  });
+
+  test.each(['/', '/trips', '/trips/some-trip/budget', '/nowhere'])('offers the theme switcher in the header at %s', (path) => {
+    renderAt(path);
+    const header = screen.getByRole('banner');
+    expect(within(header).getByRole('group', { name: 'Theme' })).toBeInTheDocument();
   });
 
   test('renders the 404 page for unknown paths', () => {

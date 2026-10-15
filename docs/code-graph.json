@@ -30,7 +30,31 @@
       "kind": "component",
       "name": "Layout",
       "file": "src/components/Layout.tsx",
-      "line": 4,
+      "line": 5,
+      "exported": true
+    },
+    {
+      "id": "src/components/ThemeSwitcher.tsx",
+      "kind": "module",
+      "name": "ThemeSwitcher.tsx",
+      "file": "src/components/ThemeSwitcher.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/components/ThemeSwitcher.tsx#SWATCH",
+      "kind": "const",
+      "name": "SWATCH",
+      "file": "src/components/ThemeSwitcher.tsx",
+      "line": 6,
+      "exported": false
+    },
+    {
+      "id": "src/components/ThemeSwitcher.tsx#ThemeSwitcher",
+      "kind": "component",
+      "name": "ThemeSwitcher",
+      "file": "src/components/ThemeSwitcher.tsx",
+      "line": 12,
       "exported": true
     },
     {
@@ -46,8 +70,16 @@
       "kind": "component",
       "name": "TripLayout",
       "file": "src/components/TripLayout.tsx",
-      "line": 4,
+      "line": 9,
       "exported": true
+    },
+    {
+      "id": "src/components/TripLayout.tsx#pillClass",
+      "kind": "function",
+      "name": "pillClass",
+      "file": "src/components/TripLayout.tsx",
+      "line": 4,
+      "exported": false
     },
     {
       "id": "src/domain/activeTrip.ts",
@@ -554,6 +586,62 @@
       "exported": false
     },
     {
+      "id": "src/domain/theme.ts",
+      "kind": "module",
+      "name": "theme.ts",
+      "file": "src/domain/theme.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/theme.ts#THEME_FADE_MS",
+      "kind": "const",
+      "name": "THEME_FADE_MS",
+      "file": "src/domain/theme.ts",
+      "line": 10,
+      "exported": true
+    },
+    {
+      "id": "src/domain/theme.ts#THEME_IDS",
+      "kind": "const",
+      "name": "THEME_IDS",
+      "file": "src/domain/theme.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/domain/theme.ts#THEME_STORAGE_KEY",
+      "kind": "const",
+      "name": "THEME_STORAGE_KEY",
+      "file": "src/domain/theme.ts",
+      "line": 6,
+      "exported": true
+    },
+    {
+      "id": "src/domain/theme.ts#ThemeId",
+      "kind": "type",
+      "name": "ThemeId",
+      "file": "src/domain/theme.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "id": "src/domain/theme.ts#isThemeId",
+      "kind": "function",
+      "name": "isThemeId",
+      "file": "src/domain/theme.ts",
+      "line": 12,
+      "exported": true
+    },
+    {
+      "id": "src/domain/theme.ts#resolveInitialTheme",
+      "kind": "function",
+      "name": "resolveInitialTheme",
+      "file": "src/domain/theme.ts",
+      "line": 17,
+      "exported": true
+    },
+    {
       "id": "src/domain/tripRepository.ts",
       "kind": "module",
       "name": "tripRepository.ts",
@@ -567,6 +655,62 @@
       "name": "TripRepository",
       "file": "src/domain/tripRepository.ts",
       "line": 7,
+      "exported": true
+    },
+    {
+      "id": "src/hooks/useTheme.ts",
+      "kind": "module",
+      "name": "useTheme.ts",
+      "file": "src/hooks/useTheme.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/hooks/useTheme.ts#applyTheme",
+      "kind": "function",
+      "name": "applyTheme",
+      "file": "src/hooks/useTheme.ts",
+      "line": 27,
+      "exported": true
+    },
+    {
+      "id": "src/hooks/useTheme.ts#currentTheme",
+      "kind": "function",
+      "name": "currentTheme",
+      "file": "src/hooks/useTheme.ts",
+      "line": 31,
+      "exported": false
+    },
+    {
+      "id": "src/hooks/useTheme.ts#prefersDarkScheme",
+      "kind": "function",
+      "name": "prefersDarkScheme",
+      "file": "src/hooks/useTheme.ts",
+      "line": 23,
+      "exported": true
+    },
+    {
+      "id": "src/hooks/useTheme.ts#readStoredTheme",
+      "kind": "function",
+      "name": "readStoredTheme",
+      "file": "src/hooks/useTheme.ts",
+      "line": 7,
+      "exported": true
+    },
+    {
+      "id": "src/hooks/useTheme.ts#storeTheme",
+      "kind": "function",
+      "name": "storeTheme",
+      "file": "src/hooks/useTheme.ts",
+      "line": 15,
+      "exported": false
+    },
+    {
+      "id": "src/hooks/useTheme.ts#useTheme",
+      "kind": "hook",
+      "name": "useTheme",
+      "file": "src/hooks/useTheme.ts",
+      "line": 37,
       "exported": true
     },
     {
@@ -622,7 +766,7 @@
       "kind": "const",
       "name": "rootElement",
       "file": "src/main.tsx",
-      "line": 8,
+      "line": 17,
       "exported": false
     },
     {
@@ -802,6 +946,51 @@
       "from": "src/App.tsx",
       "to": "src/pages/TripsPage.tsx",
       "kind": "imports"
+    },
+    {
+      "from": "src/components/Layout.tsx#Layout",
+      "to": "src/components/ThemeSwitcher.tsx#ThemeSwitcher",
+      "kind": "renders"
+    },
+    {
+      "from": "src/components/Layout.tsx",
+      "to": "src/components/ThemeSwitcher.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/components/ThemeSwitcher.tsx#SWATCH",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/components/ThemeSwitcher.tsx#ThemeSwitcher",
+      "to": "src/hooks/useTheme.ts#useTheme",
+      "kind": "calls"
+    },
+    {
+      "from": "src/components/ThemeSwitcher.tsx#ThemeSwitcher",
+      "to": "src/components/ThemeSwitcher.tsx#SWATCH",
+      "kind": "references"
+    },
+    {
+      "from": "src/components/ThemeSwitcher.tsx#ThemeSwitcher",
+      "to": "src/domain/theme.ts#THEME_IDS",
+      "kind": "references"
+    },
+    {
+      "from": "src/components/ThemeSwitcher.tsx",
+      "to": "src/domain/theme.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/components/ThemeSwitcher.tsx",
+      "to": "src/hooks/useTheme.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/components/TripLayout.tsx#TripLayout",
+      "to": "src/components/TripLayout.tsx#pillClass",
+      "kind": "references"
     },
     {
       "from": "src/domain/activeTrip.ts#pickActiveTrip",
@@ -1214,6 +1403,31 @@
       "kind": "uses-type"
     },
     {
+      "from": "src/domain/theme.ts#ThemeId",
+      "to": "src/domain/theme.ts#THEME_IDS",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/theme.ts#isThemeId",
+      "to": "src/domain/theme.ts#THEME_IDS",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/theme.ts#isThemeId",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/theme.ts#resolveInitialTheme",
+      "to": "src/domain/theme.ts#isThemeId",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/theme.ts#resolveInitialTheme",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
       "from": "src/domain/tripRepository.ts#TripRepository",
       "to": "src/domain/schemas.ts#Trip",
       "kind": "uses-type"
@@ -1226,6 +1440,81 @@
     {
       "from": "src/domain/tripRepository.ts",
       "to": "src/domain/schemas.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#applyTheme",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#currentTheme",
+      "to": "src/domain/theme.ts#isThemeId",
+      "kind": "calls"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#currentTheme",
+      "to": "src/domain/theme.ts#resolveInitialTheme",
+      "kind": "calls"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#currentTheme",
+      "to": "src/hooks/useTheme.ts#prefersDarkScheme",
+      "kind": "calls"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#currentTheme",
+      "to": "src/hooks/useTheme.ts#readStoredTheme",
+      "kind": "calls"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#currentTheme",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#readStoredTheme",
+      "to": "src/domain/theme.ts#THEME_STORAGE_KEY",
+      "kind": "references"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#storeTheme",
+      "to": "src/domain/theme.ts#THEME_STORAGE_KEY",
+      "kind": "references"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#storeTheme",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#useTheme",
+      "to": "src/hooks/useTheme.ts#applyTheme",
+      "kind": "calls"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#useTheme",
+      "to": "src/hooks/useTheme.ts#storeTheme",
+      "kind": "calls"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#useTheme",
+      "to": "src/domain/theme.ts#THEME_FADE_MS",
+      "kind": "references"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#useTheme",
+      "to": "src/hooks/useTheme.ts#currentTheme",
+      "kind": "references"
+    },
+    {
+      "from": "src/hooks/useTheme.ts#useTheme",
+      "to": "src/domain/theme.ts#ThemeId",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/hooks/useTheme.ts",
+      "to": "src/domain/theme.ts",
       "kind": "imports"
     },
     {
@@ -1246,6 +1535,16 @@
     {
       "from": "src/main.tsx",
       "to": "src/App.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/main.tsx",
+      "to": "src/domain/theme.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/main.tsx",
+      "to": "src/hooks/useTheme.ts",
       "kind": "imports"
     },
     {

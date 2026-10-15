@@ -5,10 +5,10 @@ export default function TripsPage() {
 
   return (
     <section aria-labelledby="trips-title">
-      <h1 id="trips-title" className="text-3xl font-bold">
+      <h1 id="trips-title" className="font-serif text-5xl leading-tight">
         {t('trips.title')}
       </h1>
-      <p className="mt-2">{t('placeholder')}</p>
+      <p className="mt-3 text-muted">{t('placeholder')}</p>
     </section>
   );
 }
