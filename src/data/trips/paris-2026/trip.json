@@ -1,0 +1,13 @@
+{
+  "slug": "paris-2026",
+  "title": { "en": "Paris for New Year" },
+  "destination": { "en": "Paris, France" },
+  "summary": { "en": "Six days in Paris, staying inside the Périphérique, with New Year's Eve in the city." },
+  "startDate": "2026-12-30",
+  "endDate": "2027-01-04",
+  "localCurrency": "EUR",
+  "travellers": [
+    { "id": "paris", "name": "Paris" },
+    { "id": "friend", "name": "Friend" }
+  ]
+}
