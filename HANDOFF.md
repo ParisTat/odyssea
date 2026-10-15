@@ -28,7 +28,12 @@ New section template: `docs/templates/handoff-entry.md`.
 **Working mode:** one phase per session. Finish a step, update this file, stop.
 **Next session:** step 3, design. Mock 2–3 directions as an Artifact for Paris (and the friend) to pick from, then turn the chosen one into Tailwind tokens in `src/index.css`.
 **Blockers / notes:**
+- **Online (done early, with Paris's OK):**
+  - Repo: https://github.com/ParisTat/odyssea (public).
+  - Pages is enabled (source: GitHub Actions). Site: https://paristat.github.io/odyssea/
+  - George (`PanagopoulosGeorge`) is invited with write access and needs to accept the invite.
+  - `main` is protected: a PR, 1 approval and the `checks` CI job are required. Force-push and delete are blocked. Admins can bypass.
+- **PR #1** (`feat/scaffold` → `main`) has green CI and is waiting for review and merge. Merging deploys the placeholder pages.
+- After the merge: move nothing to `docs/done/` yet. Plan 001 continues on new branches (step 3: `feat/design`).
 - Waiting on the design choice from Paris.
-- No commits yet (the branch is `feat/scaffold` and everything is untracked).
-- The repo isn't on GitHub yet (step 9). The friend's GitHub account is `PanagopoulosGeorge`. Invite them as a collaborator once `paristat/odyssea` exists, with Paris's OK at that step.
-- `"Friend"` in `trip.json` is a placeholder name; the friend can set their own nickname.
+- `"Friend"` in `trip.json` is a placeholder. **George picks his own nickname** (edit `travellers` in `src/data/trips/paris-2026/trip.json`; keep the id `friend`, or update `splitWith`/`paidBy` too).
