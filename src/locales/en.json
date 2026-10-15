@@ -1,0 +1,17 @@
+{
+  "app.name": "Odyssea",
+  "app.tagline": "Our trips, planned together.",
+  "nav.main": "Main",
+  "nav.trips": "All trips",
+  "nav.tripSections": "Trip sections",
+  "nav.itinerary": "Itinerary",
+  "nav.budget": "Budget",
+  "nav.info": "Practical info",
+  "trips.title": "All trips",
+  "home.noTrips": "No trips yet. Add one under src/data/trips/.",
+  "trip.notFound": "We couldn't find a trip called \"{{slug}}\".",
+  "notFound.title": "404: Home Not Found",
+  "notFound.body": "This page wandered off. Let's get you back on the map.",
+  "notFound.back": "Back to the active trip",
+  "placeholder": "Coming soon."
+}

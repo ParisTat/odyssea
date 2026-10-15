@@ -1,0 +1,10 @@
+{
+  "days": [
+    { "date": "2026-12-30", "title": { "en": "Arrival" }, "activities": [] },
+    { "date": "2026-12-31", "title": { "en": "New Year's Eve" }, "activities": [] },
+    { "date": "2027-01-01", "title": { "en": "New Year's Day" }, "activities": [] },
+    { "date": "2027-01-02", "activities": [] },
+    { "date": "2027-01-03", "activities": [] },
+    { "date": "2027-01-04", "title": { "en": "Departure" }, "activities": [] }
+  ]
+}

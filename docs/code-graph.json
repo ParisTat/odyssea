@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "src/App.tsx",
+      "kind": "module",
+      "name": "App.tsx",
+      "file": "src/App.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/App.tsx#App",
+      "kind": "component",
+      "name": "App",
+      "file": "src/App.tsx",
+      "line": 11,
+      "exported": true
+    },
+    {
+      "id": "src/components/Layout.tsx",
+      "kind": "module",
+      "name": "Layout.tsx",
+      "file": "src/components/Layout.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/components/Layout.tsx#Layout",
+      "kind": "component",
+      "name": "Layout",
+      "file": "src/components/Layout.tsx",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "id": "src/components/TripLayout.tsx",
+      "kind": "module",
+      "name": "TripLayout.tsx",
+      "file": "src/components/TripLayout.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/components/TripLayout.tsx#TripLayout",
+      "kind": "component",
+      "name": "TripLayout",
+      "file": "src/components/TripLayout.tsx",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "id": "src/domain/activeTrip.ts",
+      "kind": "module",
+      "name": "activeTrip.ts",
+      "file": "src/domain/activeTrip.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/activeTrip.ts#DatedTrip",
+      "kind": "interface",
+      "name": "DatedTrip",
+      "file": "src/domain/activeTrip.ts",
+      "line": 3,
+      "exported": false
+    },
+    {
+      "id": "src/domain/activeTrip.ts#TripStatus",
+      "kind": "type",
+      "name": "TripStatus",
+      "file": "src/domain/activeTrip.ts",
+      "line": 1,
+      "exported": true
+    },
+    {
+      "id": "src/domain/activeTrip.ts#pickActiveTrip",
+      "kind": "function",
+      "name": "pickActiveTrip",
+      "file": "src/domain/activeTrip.ts",
+      "line": 17,
+      "exported": true
+    },
+    {
+      "id": "src/domain/activeTrip.ts#toIsoDate",
+      "kind": "function",
+      "name": "toIsoDate",
+      "file": "src/domain/activeTrip.ts",
+      "line": 30,
+      "exported": true
+    },
+    {
+      "id": "src/domain/activeTrip.ts#tripStatus",
+      "kind": "function",
+      "name": "tripStatus",
+      "file": "src/domain/activeTrip.ts",
+      "line": 10,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts",
+      "kind": "module",
+      "name": "budget.ts",
+      "file": "src/domain/budget.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/budget.ts#Balance",
+      "kind": "interface",
+      "name": "Balance",
+      "file": "src/domain/budget.ts",
+      "line": 18,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#BudgetSummary",
+      "kind": "interface",
+      "name": "BudgetSummary",
+      "file": "src/domain/budget.ts",
+      "line": 13,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#HOME_CURRENCY",
+      "kind": "const",
+      "name": "HOME_CURRENCY",
+      "file": "src/domain/budget.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#PersonSummary",
+      "kind": "interface",
+      "name": "PersonSummary",
+      "file": "src/domain/budget.ts",
+      "line": 5,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#Transfer",
+      "kind": "interface",
+      "name": "Transfer",
+      "file": "src/domain/budget.ts",
+      "line": 23,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#minorUnitDigits",
+      "kind": "function",
+      "name": "minorUnitDigits",
+      "file": "src/domain/budget.ts",
+      "line": 30,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#settleUp",
+      "kind": "function",
+      "name": "settleUp",
+      "file": "src/domain/budget.ts",
+      "line": 76,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#splitEvenly",
+      "kind": "function",
+      "name": "splitEvenly",
+      "file": "src/domain/budget.ts",
+      "line": 47,
+      "exported": false
+    },
+    {
+      "id": "src/domain/budget.ts#summarizeBudget",
+      "kind": "function",
+      "name": "summarizeBudget",
+      "file": "src/domain/budget.ts",
+      "line": 53,
+      "exported": true
+    },
+    {
+      "id": "src/domain/budget.ts#toEurCents",
+      "kind": "function",
+      "name": "toEurCents",
+      "file": "src/domain/budget.ts",
+      "line": 35,
+      "exported": true
+    },
+    {
+      "id": "src/domain/fx.ts",
+      "kind": "module",
+      "name": "fx.ts",
+      "file": "src/domain/fx.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/fx.ts#DEFAULT_TIMEOUT_MS",
+      "kind": "const",
+      "name": "DEFAULT_TIMEOUT_MS",
+      "file": "src/domain/fx.ts",
+      "line": 6,
+      "exported": false
+    },
+    {
+      "id": "src/domain/fx.ts#FX_LATEST_URL",
+      "kind": "const",
+      "name": "FX_LATEST_URL",
+      "file": "src/domain/fx.ts",
+      "line": 5,
+      "exported": true
+    },
+    {
+      "id": "src/domain/fx.ts#FetchRateOptions",
+      "kind": "interface",
+      "name": "FetchRateOptions",
+      "file": "src/domain/fx.ts",
+      "line": 22,
+      "exported": true
+    },
+    {
+      "id": "src/domain/fx.ts#FxError",
+      "kind": "class",
+      "name": "FxError",
+      "file": "src/domain/fx.ts",
+      "line": 29,
+      "exported": true
+    },
+    {
+      "id": "src/domain/fx.ts#FxRate",
+      "kind": "interface",
+      "name": "FxRate",
+      "file": "src/domain/fx.ts",
+      "line": 14,
+      "exported": true
+    },
+    {
+      "id": "src/domain/fx.ts#LatestResponseSchema",
+      "kind": "const",
+      "name": "LatestResponseSchema",
+      "file": "src/domain/fx.ts",
+      "line": 8,
+      "exported": false
+    },
+    {
+      "id": "src/domain/fx.ts#fetchEurRate",
+      "kind": "function",
+      "name": "fetchEurRate",
+      "file": "src/domain/fx.ts",
+      "line": 36,
+      "exported": true
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts",
+      "kind": "module",
+      "name": "jsonTripRepository.ts",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#BUNDLE_FILES",
+      "kind": "const",
+      "name": "BUNDLE_FILES",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 4,
+      "exported": false
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#BundleFile",
+      "kind": "type",
+      "name": "BundleFile",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 5,
+      "exported": false
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#MODULE_PATH",
+      "kind": "const",
+      "name": "MODULE_PATH",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 6,
+      "exported": false
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#createJsonTripRepository",
+      "kind": "function",
+      "name": "createJsonTripRepository",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 32,
+      "exported": true
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#groupByFolder",
+      "kind": "function",
+      "name": "groupByFolder",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 8,
+      "exported": false
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#jsonTripRepository",
+      "kind": "const",
+      "name": "jsonTripRepository",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 46,
+      "exported": true
+    },
+    {
+      "id": "src/domain/jsonTripRepository.ts#loadBundle",
+      "kind": "function",
+      "name": "loadBundle",
+      "file": "src/domain/jsonTripRepository.ts",
+      "line": 19,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts",
+      "kind": "module",
+      "name": "schemas.ts",
+      "file": "src/domain/schemas.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts#Activity",
+      "kind": "type",
+      "name": "Activity",
+      "file": "src/domain/schemas.ts",
+      "line": 54,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#ActivitySchema",
+      "kind": "const",
+      "name": "ActivitySchema",
+      "file": "src/domain/schemas.ts",
+      "line": 44,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#CurrencyCode",
+      "kind": "const",
+      "name": "CurrencyCode",
+      "file": "src/domain/schemas.ts",
+      "line": 10,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts#Day",
+      "kind": "type",
+      "name": "Day",
+      "file": "src/domain/schemas.ts",
+      "line": 62,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#DaySchema",
+      "kind": "const",
+      "name": "DaySchema",
+      "file": "src/domain/schemas.ts",
+      "line": 56,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#Expense",
+      "kind": "type",
+      "name": "Expense",
+      "file": "src/domain/schemas.ts",
+      "line": 91,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#ExpenseSchema",
+      "kind": "const",
+      "name": "ExpenseSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 69,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#ExpensesFileSchema",
+      "kind": "const",
+      "name": "ExpensesFileSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 93,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#Id",
+      "kind": "const",
+      "name": "Id",
+      "file": "src/domain/schemas.ts",
+      "line": 11,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts#Info",
+      "kind": "type",
+      "name": "Info",
+      "file": "src/domain/schemas.ts",
+      "line": 107,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#InfoSchema",
+      "kind": "const",
+      "name": "InfoSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 106,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#InfoSection",
+      "kind": "type",
+      "name": "InfoSection",
+      "file": "src/domain/schemas.ts",
+      "line": 104,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#InfoSectionSchema",
+      "kind": "const",
+      "name": "InfoSectionSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 97,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#IsoDate",
+      "kind": "const",
+      "name": "IsoDate",
+      "file": "src/domain/schemas.ts",
+      "line": 9,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts#Itinerary",
+      "kind": "type",
+      "name": "Itinerary",
+      "file": "src/domain/schemas.ts",
+      "line": 65,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#ItinerarySchema",
+      "kind": "const",
+      "name": "ItinerarySchema",
+      "file": "src/domain/schemas.ts",
+      "line": 64,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#LocalizedText",
+      "kind": "type",
+      "name": "LocalizedText",
+      "file": "src/domain/schemas.ts",
+      "line": 7,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "const",
+      "name": "LocalizedTextSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 6,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#RawBundleSchema",
+      "kind": "const",
+      "name": "RawBundleSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 111,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts#SafeUrl",
+      "kind": "const",
+      "name": "SafeUrl",
+      "file": "src/domain/schemas.ts",
+      "line": 13,
+      "exported": false
+    },
+    {
+      "id": "src/domain/schemas.ts#Traveller",
+      "kind": "type",
+      "name": "Traveller",
+      "file": "src/domain/schemas.ts",
+      "line": 21,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#TravellerSchema",
+      "kind": "const",
+      "name": "TravellerSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 17,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#Trip",
+      "kind": "type",
+      "name": "Trip",
+      "file": "src/domain/schemas.ts",
+      "line": 40,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#TripBundle",
+      "kind": "interface",
+      "name": "TripBundle",
+      "file": "src/domain/schemas.ts",
+      "line": 151,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#TripDataError",
+      "kind": "class",
+      "name": "TripDataError",
+      "file": "src/domain/schemas.ts",
+      "line": 158,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#TripSchema",
+      "kind": "const",
+      "name": "TripSchema",
+      "file": "src/domain/schemas.ts",
+      "line": 23,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#localize",
+      "kind": "function",
+      "name": "localize",
+      "file": "src/domain/schemas.ts",
+      "line": 176,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#parseTripBundle",
+      "kind": "function",
+      "name": "parseTripBundle",
+      "file": "src/domain/schemas.ts",
+      "line": 166,
+      "exported": true
+    },
+    {
+      "id": "src/domain/schemas.ts#reportDuplicates",
+      "kind": "function",
+      "name": "reportDuplicates",
+      "file": "src/domain/schemas.ts",
+      "line": 181,
+      "exported": false
+    },
+    {
+      "id": "src/domain/tripRepository.ts",
+      "kind": "module",
+      "name": "tripRepository.ts",
+      "file": "src/domain/tripRepository.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/tripRepository.ts#TripRepository",
+      "kind": "interface",
+      "name": "TripRepository",
+      "file": "src/domain/tripRepository.ts",
+      "line": 7,
+      "exported": true
+    },
+    {
+      "id": "src/i18n.ts",
+      "kind": "module",
+      "name": "i18n.ts",
+      "file": "src/i18n.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/i18n.ts#DEFAULT_LOCALE",
+      "kind": "const",
+      "name": "DEFAULT_LOCALE",
+      "file": "src/i18n.ts",
+      "line": 9,
+      "exported": true
+    },
+    {
+      "id": "src/i18n.ts#Locale",
+      "kind": "type",
+      "name": "Locale",
+      "file": "src/i18n.ts",
+      "line": 8,
+      "exported": true
+    },
+    {
+      "id": "src/i18n.ts#SUPPORTED_LOCALES",
+      "kind": "const",
+      "name": "SUPPORTED_LOCALES",
+      "file": "src/i18n.ts",
+      "line": 7,
+      "exported": true
+    },
+    {
+      "id": "src/locales/en.json",
+      "kind": "data",
+      "name": "en.json",
+      "file": "src/locales/en.json",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/main.tsx",
+      "kind": "module",
+      "name": "main.tsx",
+      "file": "src/main.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/main.tsx#rootElement",
+      "kind": "const",
+      "name": "rootElement",
+      "file": "src/main.tsx",
+      "line": 8,
+      "exported": false
+    },
+    {
+      "id": "src/pages/BudgetPage.tsx",
+      "kind": "module",
+      "name": "BudgetPage.tsx",
+      "file": "src/pages/BudgetPage.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/pages/BudgetPage.tsx#BudgetPage",
+      "kind": "component",
+      "name": "BudgetPage",
+      "file": "src/pages/BudgetPage.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/pages/HomePage.tsx",
+      "kind": "module",
+      "name": "HomePage.tsx",
+      "file": "src/pages/HomePage.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/pages/HomePage.tsx#HomePage",
+      "kind": "component",
+      "name": "HomePage",
+      "file": "src/pages/HomePage.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/pages/InfoPage.tsx",
+      "kind": "module",
+      "name": "InfoPage.tsx",
+      "file": "src/pages/InfoPage.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/pages/InfoPage.tsx#InfoPage",
+      "kind": "component",
+      "name": "InfoPage",
+      "file": "src/pages/InfoPage.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/pages/ItineraryPage.tsx",
+      "kind": "module",
+      "name": "ItineraryPage.tsx",
+      "file": "src/pages/ItineraryPage.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/pages/ItineraryPage.tsx#ItineraryPage",
+      "kind": "component",
+      "name": "ItineraryPage",
+      "file": "src/pages/ItineraryPage.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/pages/NotFoundPage.tsx",
+      "kind": "module",
+      "name": "NotFoundPage.tsx",
+      "file": "src/pages/NotFoundPage.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/pages/NotFoundPage.tsx#NotFoundPage",
+      "kind": "component",
+      "name": "NotFoundPage",
+      "file": "src/pages/NotFoundPage.tsx",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "id": "src/pages/TripsPage.tsx",
+      "kind": "module",
+      "name": "TripsPage.tsx",
+      "file": "src/pages/TripsPage.tsx",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/pages/TripsPage.tsx#TripsPage",
+      "kind": "component",
+      "name": "TripsPage",
+      "file": "src/pages/TripsPage.tsx",
+      "line": 3,
+      "exported": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/components/Layout.tsx#Layout",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/components/TripLayout.tsx#TripLayout",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/pages/BudgetPage.tsx#BudgetPage",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/pages/HomePage.tsx#HomePage",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/pages/InfoPage.tsx#InfoPage",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/pages/ItineraryPage.tsx#ItineraryPage",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/pages/NotFoundPage.tsx#NotFoundPage",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx#App",
+      "to": "src/pages/TripsPage.tsx#TripsPage",
+      "kind": "renders"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/components/Layout.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/components/TripLayout.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/pages/BudgetPage.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/pages/HomePage.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/pages/InfoPage.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/pages/ItineraryPage.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/pages/NotFoundPage.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/App.tsx",
+      "to": "src/pages/TripsPage.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/activeTrip.ts#pickActiveTrip",
+      "to": "src/domain/activeTrip.ts#tripStatus",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/activeTrip.ts#pickActiveTrip",
+      "to": "src/domain/activeTrip.ts#DatedTrip",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/activeTrip.ts#tripStatus",
+      "to": "src/domain/activeTrip.ts#DatedTrip",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/activeTrip.ts#tripStatus",
+      "to": "src/domain/activeTrip.ts#TripStatus",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#BudgetSummary",
+      "to": "src/domain/budget.ts#PersonSummary",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#settleUp",
+      "to": "src/domain/budget.ts#Balance",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#settleUp",
+      "to": "src/domain/budget.ts#Transfer",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#summarizeBudget",
+      "to": "src/domain/budget.ts#splitEvenly",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/budget.ts#summarizeBudget",
+      "to": "src/domain/budget.ts#toEurCents",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/budget.ts#summarizeBudget",
+      "to": "src/domain/budget.ts#BudgetSummary",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#summarizeBudget",
+      "to": "src/domain/schemas.ts#Expense",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#summarizeBudget",
+      "to": "src/domain/schemas.ts#Traveller",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts#toEurCents",
+      "to": "src/domain/budget.ts#minorUnitDigits",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/budget.ts#toEurCents",
+      "to": "src/domain/budget.ts#HOME_CURRENCY",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/budget.ts#toEurCents",
+      "to": "src/domain/schemas.ts#Expense",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/budget.ts",
+      "to": "src/domain/schemas.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/activeTrip.ts#toIsoDate",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/fx.ts#FxError",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/fx.ts#DEFAULT_TIMEOUT_MS",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/fx.ts#FX_LATEST_URL",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/fx.ts#LatestResponseSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/fx.ts#FetchRateOptions",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/fx.ts#fetchEurRate",
+      "to": "src/domain/fx.ts#FxRate",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/fx.ts",
+      "to": "src/domain/activeTrip.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#BundleFile",
+      "to": "src/domain/jsonTripRepository.ts#BUNDLE_FILES",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#createJsonTripRepository",
+      "to": "src/domain/jsonTripRepository.ts#groupByFolder",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#createJsonTripRepository",
+      "to": "src/domain/jsonTripRepository.ts#loadBundle",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#createJsonTripRepository",
+      "to": "src/domain/tripRepository.ts#TripRepository",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#groupByFolder",
+      "to": "src/domain/jsonTripRepository.ts#MODULE_PATH",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#groupByFolder",
+      "to": "src/domain/jsonTripRepository.ts#BundleFile",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#jsonTripRepository",
+      "to": "src/domain/jsonTripRepository.ts#createJsonTripRepository",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#loadBundle",
+      "to": "src/domain/schemas.ts#parseTripBundle",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#loadBundle",
+      "to": "src/domain/jsonTripRepository.ts#BUNDLE_FILES",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#loadBundle",
+      "to": "src/domain/jsonTripRepository.ts#BundleFile",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts#loadBundle",
+      "to": "src/domain/schemas.ts#TripBundle",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts",
+      "to": "src/domain/schemas.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/jsonTripRepository.ts",
+      "to": "src/domain/tripRepository.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/schemas.ts#ActivitySchema",
+      "to": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#ActivitySchema",
+      "to": "src/domain/schemas.ts#SafeUrl",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#Activity",
+      "to": "src/domain/schemas.ts#ActivitySchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#DaySchema",
+      "to": "src/domain/schemas.ts#ActivitySchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#DaySchema",
+      "to": "src/domain/schemas.ts#IsoDate",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#DaySchema",
+      "to": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#Day",
+      "to": "src/domain/schemas.ts#DaySchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#ExpenseSchema",
+      "to": "src/domain/schemas.ts#CurrencyCode",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#ExpenseSchema",
+      "to": "src/domain/schemas.ts#Id",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#ExpenseSchema",
+      "to": "src/domain/schemas.ts#IsoDate",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#ExpenseSchema",
+      "to": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#ExpensesFileSchema",
+      "to": "src/domain/schemas.ts#ExpenseSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#Expense",
+      "to": "src/domain/schemas.ts#ExpenseSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#InfoSchema",
+      "to": "src/domain/schemas.ts#InfoSectionSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#InfoSectionSchema",
+      "to": "src/domain/schemas.ts#Id",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#InfoSectionSchema",
+      "to": "src/domain/schemas.ts#IsoDate",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#InfoSectionSchema",
+      "to": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#InfoSectionSchema",
+      "to": "src/domain/schemas.ts#SafeUrl",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#InfoSection",
+      "to": "src/domain/schemas.ts#InfoSectionSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#Info",
+      "to": "src/domain/schemas.ts#InfoSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#ItinerarySchema",
+      "to": "src/domain/schemas.ts#DaySchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#Itinerary",
+      "to": "src/domain/schemas.ts#ItinerarySchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#LocalizedText",
+      "to": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#RawBundleSchema",
+      "to": "src/domain/schemas.ts#reportDuplicates",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/schemas.ts#RawBundleSchema",
+      "to": "src/domain/schemas.ts#ExpensesFileSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#RawBundleSchema",
+      "to": "src/domain/schemas.ts#InfoSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#RawBundleSchema",
+      "to": "src/domain/schemas.ts#ItinerarySchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#RawBundleSchema",
+      "to": "src/domain/schemas.ts#TripSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#TravellerSchema",
+      "to": "src/domain/schemas.ts#Id",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#Traveller",
+      "to": "src/domain/schemas.ts#TravellerSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripBundle",
+      "to": "src/domain/schemas.ts#Expense",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripBundle",
+      "to": "src/domain/schemas.ts#Info",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripBundle",
+      "to": "src/domain/schemas.ts#Itinerary",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripBundle",
+      "to": "src/domain/schemas.ts#Trip",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripSchema",
+      "to": "src/domain/schemas.ts#reportDuplicates",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripSchema",
+      "to": "src/domain/schemas.ts#CurrencyCode",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripSchema",
+      "to": "src/domain/schemas.ts#Id",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripSchema",
+      "to": "src/domain/schemas.ts#IsoDate",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripSchema",
+      "to": "src/domain/schemas.ts#LocalizedTextSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#TripSchema",
+      "to": "src/domain/schemas.ts#TravellerSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#Trip",
+      "to": "src/domain/schemas.ts#TripSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#localize",
+      "to": "src/domain/schemas.ts#LocalizedText",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/schemas.ts#parseTripBundle",
+      "to": "src/domain/schemas.ts#TripDataError",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/schemas.ts#parseTripBundle",
+      "to": "src/domain/schemas.ts#RawBundleSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/schemas.ts#parseTripBundle",
+      "to": "src/domain/schemas.ts#TripBundle",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/tripRepository.ts#TripRepository",
+      "to": "src/domain/schemas.ts#Trip",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/tripRepository.ts#TripRepository",
+      "to": "src/domain/schemas.ts#TripBundle",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/tripRepository.ts",
+      "to": "src/domain/schemas.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/i18n.ts#DEFAULT_LOCALE",
+      "to": "src/i18n.ts#Locale",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/i18n.ts#Locale",
+      "to": "src/i18n.ts#SUPPORTED_LOCALES",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/i18n.ts",
+      "to": "src/locales/en.json",
+      "kind": "imports"
+    },
+    {
+      "from": "src/main.tsx",
+      "to": "src/App.tsx",
+      "kind": "imports"
+    },
+    {
+      "from": "src/main.tsx",
+      "to": "src/i18n.ts",
+      "kind": "imports"
+    }
+  ]
+}
