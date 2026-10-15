@@ -18,6 +18,8 @@
     "graph:check": "node scripts/code-graph.ts --check"
   },
   "dependencies": {
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
     "i18next": "^26.4.5",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",

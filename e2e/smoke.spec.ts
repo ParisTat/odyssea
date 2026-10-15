@@ -43,4 +43,18 @@ test.describe('Odyssea smoke test', () => {
 
     await expect(page.getByRole('heading', { level: 1, name: 'All trips' })).toBeVisible();
   });
+
+  test('the chosen theme applies and survives a reload', async ({ page }) => {
+    const getErrors = await collectErrors(page);
+    await page.goto('./');
+    await page.getByRole('button', { name: 'Dark' }).click();
+
+    const html = page.locator('html');
+    await expect(html).toHaveAttribute('data-theme', 'dark');
+
+    await page.reload();
+    await expect(html).toHaveAttribute('data-theme', 'dark');
+    await expect(page.getByRole('button', { name: 'Dark' })).toHaveAttribute('aria-pressed', 'true');
+    expect(await getErrors()).toEqual([]);
+  });
 });

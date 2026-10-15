@@ -5,10 +5,10 @@ export default function ItineraryPage() {
 
   return (
     <section aria-labelledby="itinerary-title">
-      <h1 id="itinerary-title" className="text-3xl font-bold">
+      <h1 id="itinerary-title" className="font-serif text-5xl leading-tight">
         {t('nav.itinerary')}
       </h1>
-      <p className="mt-2">{t('placeholder')}</p>
+      <p className="mt-3 text-muted">{t('placeholder')}</p>
     </section>
   );
 }

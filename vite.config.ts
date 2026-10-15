@@ -14,8 +14,9 @@ export function buildContentSecurityPolicy(): string {
     "default-src 'self'",
     "script-src 'self'",
     // No 'unsafe-inline': React applies `style` props through the CSSOM, which CSP allows.
-    "style-src 'self' https://fonts.googleapis.com",
-    "font-src 'self' https://fonts.gstatic.com",
+    "style-src 'self'",
+    // Fonts are self-hosted via @fontsource (see src/main.tsx), so no font CDN is allowed.
+    "font-src 'self'",
     "img-src 'self' data:",
     `connect-src 'self' ${FX_API_ORIGIN}`,
     "object-src 'none'",

@@ -6,34 +6,28 @@ New section template: `docs/templates/handoff-entry.md`.
 
 ---
 
-## feat/scaffold · Paris (with Claude) · updated 2026-10-15
-**Plan:** [docs/plans/001-mvp.md](docs/plans/001-mvp.md) (steps 1–2 of 9 done)
+## feat/design · Paris (with Claude) · updated 2026-10-16
+**Plan:** [docs/plans/001-mvp.md](docs/plans/001-mvp.md) (steps 1–3 of 9 done)
 **Last done:**
-- Step 1, the scaffold:
-  - Vite 8 + React 19 + TS + Tailwind v4, react-router (routes + 404), i18next (en only).
-  - CSP meta, CI and deploy workflows, Dependabot.
-  - `HANDOFF.md` + `docs/`.
-- Step 2, the domain (`src/domain/`):
-  - zod schemas with cross-file checks (unknown payer, day outside the trip, missing `rateToEur`, http(s)-only URLs).
-  - `TripRepository` + its JSON implementation (via `import.meta.glob`).
-  - `budget.ts`: EUR cents, even split with the remainder going to the first participants, greedy settle-up.
-  - `activeTrip.ts` and `fx.ts` (Frankfurter, timeout, zod-validated).
-  - `scripts/fx-rate.mjs`.
-  - Paris seed data: 6 empty days, travellers `paris` + `friend`, no expenses or info yet.
-- Code graph:
-  - `scripts/code-graph.ts` → `docs/code-graph.json` (90 nodes, 106 edges; DB-portable nodes + edges).
-  - `npm run graph` regenerates it, `npm run graph:check` runs in CI, and there are 7 tests.
-  - Format documented in `CLAUDE.md` → "Code graph".
-- 77 tests, coverage of about 99%, and lint, typecheck and build are green.
+- Steps 1–2 merged to `main` as PR #1 (squash, `f4bb763`); `feat/scaffold` is deleted.
+- Step 3, design:
+  - Paris picked **B · Carte postale** out of three mocks on a private Artifact design canvas (Paris owns it; share it from its Share menu so George can open it). The **"B · Live"** board there is the reference for step 4: panel layout, countdown, edit form and motion.
+  - Decisions: three themes (White, Wood, Dark); **panels** rather than tabs for the trip sections; a clear live countdown; a slow, even 650ms fade between themes.
+- Tokens in `src/index.css` (Tailwind v4): colours `ground surface ink muted line accent tint inverse*` switch per theme through `<html data-theme>`; `shadow-card`; `ease-soft` / `ease-theme`; fonts `font-serif` (Instrument Serif) and `font-sans` (Instrument Sans).
+- Fonts are self-hosted with `@fontsource`; the CSP is tightened to `style-src 'self'` and `font-src 'self'` (Google Fonts removed).
+- Theme switching: `src/domain/theme.ts` (pure, tested), `src/hooks/useTheme.ts` (applies it, remembers it under the localStorage key `odyssea.theme`, cross-fades), and `ThemeSwitcher` in the header. A first visit follows the system light/dark setting.
+- Motion: the colour tokens are registered with `@property`, and only `<html>` animates them during a switch, so all text fades in step and the saved theme paints instantly on load (both checked in Chrome).
+- Shell restyled: serif italic wordmark, pill section nav, serif page headings. Page bodies are still placeholders.
+- 101 unit tests (coverage about 99.6%), 4 Playwright smoke tests (including "theme survives a reload"); lint, typecheck, build and graph check are green.
 **Working mode:** one phase per session. Finish a step, update this file, stop.
-**Next session:** step 3, design. Mock 2–3 directions as an Artifact for Paris (and the friend) to pick from, then turn the chosen one into Tailwind tokens in `src/index.css`.
+**Next session:** step 4, pages, built to match the "B · Live" board:
+- Trip header (title, summary, dates) + live countdown (`src/domain/countdown.ts`, test-first).
+- Itinerary day cards with date stamps; the New Year's Eve card inverted.
+- Budget and Practical info as panels that open on the right and push the itinerary left (stacked at phone width). Keep `/trips/:slug/budget` and `/trips/:slug/info` as deep links that open those panels.
+- The `TripSwitcher` dropdown in the header.
 **Blockers / notes:**
-- **Online (done early, with Paris's OK):**
-  - Repo: https://github.com/ParisTat/odyssea (public).
-  - Pages is enabled (source: GitHub Actions). Site: https://paristat.github.io/odyssea/
-  - George (`PanagopoulosGeorge`) is invited with write access and needs to accept the invite.
-  - `main` is protected: a PR, 1 approval and the `checks` CI job are required. Force-push and delete are blocked. Admins can bypass.
-- **PR #1** (`feat/scaffold` → `main`) has green CI and is waiting for review and merge. Merging deploys the placeholder pages.
-- After the merge: move nothing to `docs/done/` yet. Plan 001 continues on new branches (step 3: `feat/design`).
-- Waiting on the design choice from Paris.
+- Known, accepted: the saved theme is applied by the deferred module script, so a returning Wood/Dark visitor on a slow connection may see one White frame (a Dark system already gets a dark fallback in CSS). The fix would be a tiny external script in `<head>` (CSP allows `'self'`); not worth the duplicated logic yet.
+- **Editing in the site** (dates, text) needs a login. GitHub Pages + JSON data has no safe way to write, so it belongs to the Firebase plan (Auth allowlist), not the MVP. Until then, edits are PRs to the JSON.
+- George (`PanagopoulosGeorge`) is invited with write access and needs to accept the invite.
+- `main` is protected: a PR, 1 approval and the `checks` CI job are required. Admins can bypass.
 - `"Friend"` in `trip.json` is a placeholder. **George picks his own nickname** (edit `travellers` in `src/data/trips/paris-2026/trip.json`; keep the id `friend`, or update `splitWith`/`paidBy` too).

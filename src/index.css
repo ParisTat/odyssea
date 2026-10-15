@@ -1,15 +1,141 @@
 @import 'tailwindcss';
 
-/* Design tokens are placeholders until the design direction is approved (plan step 3). */
+/*
+ * Design B, "Carte postale" (approved 2026-10-15; mock on the design canvas, see HANDOFF.md).
+ * Three themes share one set of token names. White is the default @theme below;
+ * Wood and Dark override the same variables on <html data-theme="…">, which useTheme sets.
+ * Muted text stays at 4.5:1 or better against both ground and surface in every theme.
+ */
 @theme {
-  --color-ink: oklch(22% 0.02 260);
-  --color-paper: oklch(98% 0.01 85);
-  --color-accent: oklch(55% 0.16 25);
+  --font-sans: 'Instrument Sans Variable', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
+
+  --color-ground: #fafaf8; /* page background */
+  --color-surface: #ffffff; /* cards */
+  --color-ink: #1e2a24; /* text; filled pills */
+  --color-muted: #55625b; /* secondary text */
+  --color-line: #d9ded8; /* borders, dividers */
+  --color-accent: #b23d0b; /* date stamps, eyebrow, countdown */
+  --color-tint: #f6e3d8; /* soft highlight: settle-up, badges, hovers */
+  --color-inverse: #1e2a24; /* the highlighted day (New Year's Eve) */
+  --color-inverse-ink: #f8f9f5;
+  --color-inverse-muted: #c5cec8;
+  --color-inverse-accent: #f2b48f;
+  --color-edge: transparent; /* card outline (dark theme only) */
+  --color-shadow: rgb(30 42 36 / 0.06); /* card drop shadow */
+
+  --shadow-card: 0 0 0 1px var(--color-edge), 0 1px 0 var(--color-line), 0 8px 24px var(--color-shadow);
+
+  --ease-soft: cubic-bezier(0.22, 0.8, 0.24, 1); /* panels and layout moves, ~420ms */
+  --ease-theme: cubic-bezier(0.45, 0, 0.2, 1); /* theme cross-fade */
 }
 
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  :root[data-theme='wood'] {
+    --color-ground: #e8d9c0;
+    --color-surface: #f5ecdc;
+    --color-ink: #2b1d12;
+    --color-muted: #5e4a38;
+    --color-line: #c9b291;
+    --color-accent: #8a3b12;
+    --color-tint: #ebd3bc;
+    --color-inverse: #3b2a1c;
+    --color-inverse-ink: #f5ecdc;
+    --color-inverse-muted: #d9c6ac;
+    --color-inverse-accent: #ebb07f;
+    --color-shadow: rgb(43 29 18 / 0.1);
+  }
+
+  :root[data-theme='dark'] {
+    color-scheme: dark;
+    --color-ground: #111517;
+    --color-surface: #1a2023;
+    --color-ink: #ecefea;
+    --color-muted: #a3ada8;
+    --color-line: #2e373b;
+    --color-accent: #f0905f;
+    --color-tint: #3a261c;
+    --color-inverse: #2a1d17;
+    --color-inverse-ink: #f6ede6;
+    --color-inverse-muted: #d8c3b6;
+    --color-inverse-accent: #f0905f;
+    --color-edge: #2e373b;
+    --color-shadow: transparent;
+  }
+
+  /* Before main.tsx applies a theme, match a dark system so the first paint doesn't flash white. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+      color-scheme: dark;
+      background-color: #111517;
+    }
+  }
+
+  html,
   body {
-    background-color: var(--color-paper);
+    background-color: var(--color-ground);
     color: var(--color-ink);
   }
+
+  body {
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  /*
+   * Motion. Hovers and pressed states ease quickly on each element. A theme switch is different:
+   * while html[data-theme-fading] is set (useTheme sets it together with data-theme), <html> animates
+   * the colour tokens themselves (registered with @property below) over 650ms (THEME_FADE_MS in
+   * src/domain/theme.ts), and every element simply follows them in lockstep. Per-element transitions
+   * are off meanwhile; otherwise nested text, which inherits its colour, would chase its parent's fade.
+   * Only during a switch: the theme applied at page load must paint at once, not fade in.
+   */
+  @media (prefers-reduced-motion: no-preference) {
+    *,
+    ::before,
+    ::after {
+      transition-property: color, background-color, border-color, box-shadow, fill, stroke;
+      transition-duration: 180ms;
+      transition-timing-function: ease;
+    }
+
+    html[data-theme-fading] {
+      transition-property:
+        --color-ground, --color-surface, --color-ink, --color-muted, --color-line, --color-accent, --color-tint,
+        --color-inverse, --color-inverse-ink, --color-inverse-muted, --color-inverse-accent, --color-edge,
+        --color-shadow;
+      transition-duration: 650ms;
+      transition-timing-function: var(--ease-theme);
+    }
+
+    html[data-theme-fading] *,
+    html[data-theme-fading] ::before,
+    html[data-theme-fading] ::after {
+      transition-duration: 0s !important;
+    }
+  }
 }
+
+/* Registered as colours so <html> can interpolate them during a theme switch (see Motion above). */
+@property --color-ground { syntax: '<color>'; inherits: true; initial-value: #fafaf8; }
+@property --color-surface { syntax: '<color>'; inherits: true; initial-value: #ffffff; }
+@property --color-ink { syntax: '<color>'; inherits: true; initial-value: #1e2a24; }
+@property --color-muted { syntax: '<color>'; inherits: true; initial-value: #55625b; }
+@property --color-line { syntax: '<color>'; inherits: true; initial-value: #d9ded8; }
+@property --color-accent { syntax: '<color>'; inherits: true; initial-value: #b23d0b; }
+@property --color-tint { syntax: '<color>'; inherits: true; initial-value: #f6e3d8; }
+@property --color-inverse { syntax: '<color>'; inherits: true; initial-value: #1e2a24; }
+@property --color-inverse-ink { syntax: '<color>'; inherits: true; initial-value: #f8f9f5; }
+@property --color-inverse-muted { syntax: '<color>'; inherits: true; initial-value: #c5cec8; }
+@property --color-inverse-accent { syntax: '<color>'; inherits: true; initial-value: #f2b48f; }
+@property --color-edge { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --color-shadow { syntax: '<color>'; inherits: true; initial-value: transparent; }

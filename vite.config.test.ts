@@ -21,6 +21,11 @@ describe('buildContentSecurityPolicy', () => {
     expect(FX_API_ORIGIN).toMatch(/^https:\/\//);
   });
 
+  test('serves styles and fonts from the site itself only', () => {
+    expect(directive('style-src')).toBe("style-src 'self'");
+    expect(directive('font-src')).toBe("font-src 'self'");
+  });
+
   test('restricts images to same-origin and data URIs', () => {
     expect(directive('img-src')).toBe("img-src 'self' data:");
   });
