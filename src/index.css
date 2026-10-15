@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+/* Design tokens are placeholders until the design direction is approved (plan step 3). */
+@theme {
+  --color-ink: oklch(22% 0.02 260);
+  --color-paper: oklch(98% 0.01 85);
+  --color-accent: oklch(55% 0.16 25);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+}
