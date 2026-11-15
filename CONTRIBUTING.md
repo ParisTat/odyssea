@@ -20,7 +20,7 @@ The site needs Node 24 (the same as CI). There are no env vars and no secrets.
 4. Work in small commits (`feat:`, `fix:`, `docs:`, `test:`, `refactor:`, `chore:`).
 5. Before you push: `npm run graph && npm run lint && npm run typecheck && npm test && npm run build`. `npm run graph` refreshes `docs/code-graph.json`, the map of which function calls, renders or uses which. CI fails if it's stale.
 6. Before you stop for the day: update your section in `HANDOFF.md` and commit it.
-7. Open a PR to `main`. CI must pass and the other person reviews. Merging deploys the site.
+7. Open a PR to `main`. CI must pass and open conversations must be resolved; then the author merges (no approval required). Ask the other person for a review when a change is risky or touches their area. Merging deploys the site.
 
 ## Planning & handoff
 
