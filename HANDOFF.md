@@ -29,7 +29,7 @@ New section template: `docs/templates/handoff-entry.md`.
 - Known, accepted: the saved theme is applied by the deferred module script, so a returning Wood/Dark visitor on a slow connection may see one White frame (a Dark system already gets a dark fallback in CSS). The fix would be a tiny external script in `<head>` (CSP allows `'self'`); not worth the duplicated logic yet.
 - **Editing in the site** (dates, text) needs a login. GitHub Pages + JSON data has no safe way to write, so it belongs to the Firebase plan (Auth allowlist), not the MVP. Until then, edits are PRs to the JSON.
 - George (`PanagopoulosGeorge`) is invited with write access and needs to accept the invite.
-- `main` is protected: a PR, 1 approval and the `checks` CI job are required. Admins can bypass.
+- `main` is protected: a PR, the `checks` CI job and resolved conversations are required; no approval (since 2026-11-15, so each of us can merge our own PRs). Outsiders without write access can't merge or close our PRs.
 - `"Friend"` in `trip.json` is a placeholder. **George picks his own nickname** (edit `travellers` in `src/data/trips/paris-2026/trip.json`; keep the id `friend`, or update `splitWith`/`paidBy` too).
 
 ---
