@@ -346,6 +346,502 @@
       "exported": false
     },
     {
+      "id": "src/domain/luggage/businessDays.ts",
+      "kind": "module",
+      "name": "businessDays.ts",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#DAY_MS",
+      "kind": "const",
+      "name": "DAY_MS",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 4,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#ISO",
+      "kind": "const",
+      "name": "ISO",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 5,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#addBusinessDays",
+      "kind": "function",
+      "name": "addBusinessDays",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 35,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "function",
+      "name": "addDays",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 25,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#assertInteger",
+      "kind": "function",
+      "name": "assertInteger",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 21,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#assertIsoDate",
+      "kind": "function",
+      "name": "assertIsoDate",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 17,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#format",
+      "kind": "function",
+      "name": "format",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 15,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#isBusinessDay",
+      "kind": "function",
+      "name": "isBusinessDay",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 30,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#parse",
+      "kind": "function",
+      "name": "parse",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 7,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#rollBack",
+      "kind": "function",
+      "name": "rollBack",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 47,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/businessDays.ts#rollForward",
+      "kind": "function",
+      "name": "rollForward",
+      "file": "src/domain/luggage/businessDays.ts",
+      "line": 52,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/chargeableWeight.ts",
+      "kind": "module",
+      "name": "chargeableWeight.ts",
+      "file": "src/domain/luggage/chargeableWeight.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/chargeableWeight.ts#Bag",
+      "kind": "interface",
+      "name": "Bag",
+      "file": "src/domain/luggage/chargeableWeight.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/chargeableWeight.ts#ChargeableWeight",
+      "kind": "interface",
+      "name": "ChargeableWeight",
+      "file": "src/domain/luggage/chargeableWeight.ts",
+      "line": 10,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/chargeableWeight.ts#DEFAULT_VOLUMETRIC_DIVISOR",
+      "kind": "const",
+      "name": "DEFAULT_VOLUMETRIC_DIVISOR",
+      "file": "src/domain/luggage/chargeableWeight.ts",
+      "line": 1,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/chargeableWeight.ts#EPSILON",
+      "kind": "const",
+      "name": "EPSILON",
+      "file": "src/domain/luggage/chargeableWeight.ts",
+      "line": 17,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/chargeableWeight.ts#chargeableWeight",
+      "kind": "function",
+      "name": "chargeableWeight",
+      "file": "src/domain/luggage/chargeableWeight.ts",
+      "line": 20,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts",
+      "kind": "module",
+      "name": "compareOptions.ts",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#AirlineFees",
+      "kind": "interface",
+      "name": "AirlineFees",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#CompareInput",
+      "kind": "interface",
+      "name": "CompareInput",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 46,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#Comparison",
+      "kind": "interface",
+      "name": "Comparison",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 39,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#Exclusion",
+      "kind": "interface",
+      "name": "Exclusion",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 23,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#ExclusionReason",
+      "kind": "type",
+      "name": "ExclusionReason",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 9,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#Leg",
+      "kind": "interface",
+      "name": "Leg",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 11,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#LegResult",
+      "kind": "type",
+      "name": "LegResult",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 52,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#Option",
+      "kind": "interface",
+      "name": "Option",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 29,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#assertCents",
+      "kind": "function",
+      "name": "assertCents",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 117,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "kind": "function",
+      "name": "compareOptions",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 122,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#compareText",
+      "kind": "function",
+      "name": "compareText",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 115,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#fits",
+      "kind": "function",
+      "name": "fits",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 55,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#legsFor",
+      "kind": "function",
+      "name": "legsFor",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 100,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "kind": "function",
+      "name": "priceLeg",
+      "file": "src/domain/luggage/compareOptions.ts",
+      "line": 61,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts",
+      "kind": "module",
+      "name": "providers.ts",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#Cents",
+      "kind": "const",
+      "name": "Cents",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 4,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#CountryCode",
+      "kind": "const",
+      "name": "CountryCode",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 7,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#Dims",
+      "kind": "const",
+      "name": "Dims",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 6,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#Direction",
+      "kind": "type",
+      "name": "Direction",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 81,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#IsoDate",
+      "kind": "const",
+      "name": "IsoDate",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 3,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#LockerSizesSchema",
+      "kind": "const",
+      "name": "LockerSizesSchema",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 21,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#Positive",
+      "kind": "const",
+      "name": "Positive",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 5,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#Provider",
+      "kind": "type",
+      "name": "Provider",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 79,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#ProviderSchema",
+      "kind": "const",
+      "name": "ProviderSchema",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 48,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#ProvidersSchema",
+      "kind": "const",
+      "name": "ProvidersSchema",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 75,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#Route",
+      "kind": "type",
+      "name": "Route",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 80,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#RouteSchema",
+      "kind": "const",
+      "name": "RouteSchema",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 36,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#TransitSchema",
+      "kind": "const",
+      "name": "TransitSchema",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 9,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#WeightBandsSchema",
+      "kind": "const",
+      "name": "WeightBandsSchema",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 13,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/providers.ts#parseProviders",
+      "kind": "function",
+      "name": "parseProviders",
+      "file": "src/domain/luggage/providers.ts",
+      "line": 83,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts",
+      "kind": "module",
+      "name": "shippingDates.ts",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 1,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#DateFailure",
+      "kind": "type",
+      "name": "DateFailure",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 8,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#ReturnInput",
+      "kind": "interface",
+      "name": "ReturnInput",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 65,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#ReturnResult",
+      "kind": "type",
+      "name": "ReturnResult",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 75,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#SendByInput",
+      "kind": "interface",
+      "name": "SendByInput",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 10,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#SendByResult",
+      "kind": "type",
+      "name": "SendByResult",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 20,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#Transit",
+      "kind": "interface",
+      "name": "Transit",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#assertCount",
+      "kind": "function",
+      "name": "assertCount",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 22,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#assertTransit",
+      "kind": "function",
+      "name": "assertTransit",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 26,
+      "exported": false
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#earliestDeliveryForHold",
+      "kind": "function",
+      "name": "earliestDeliveryForHold",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 37,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#lastCollectionDay",
+      "kind": "function",
+      "name": "lastCollectionDay",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 42,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "kind": "function",
+      "name": "returnDropOffDeadline",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 87,
+      "exported": true
+    },
+    {
+      "id": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "kind": "function",
+      "name": "sendByDate",
+      "file": "src/domain/luggage/shippingDates.ts",
+      "line": 47,
+      "exported": true
+    },
+    {
       "id": "src/domain/schemas.ts",
       "kind": "module",
       "name": "schemas.ts",
@@ -1175,6 +1671,501 @@
     {
       "from": "src/domain/jsonTripRepository.ts",
       "to": "src/domain/tripRepository.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addBusinessDays",
+      "to": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addBusinessDays",
+      "to": "src/domain/luggage/businessDays.ts#assertInteger",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addBusinessDays",
+      "to": "src/domain/luggage/businessDays.ts#isBusinessDay",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addDays",
+      "to": "src/domain/luggage/businessDays.ts#assertInteger",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addDays",
+      "to": "src/domain/luggage/businessDays.ts#format",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addDays",
+      "to": "src/domain/luggage/businessDays.ts#parse",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#addDays",
+      "to": "src/domain/luggage/businessDays.ts#DAY_MS",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#assertIsoDate",
+      "to": "src/domain/luggage/businessDays.ts#parse",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#isBusinessDay",
+      "to": "src/domain/luggage/businessDays.ts#parse",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#parse",
+      "to": "src/domain/luggage/businessDays.ts#ISO",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#rollBack",
+      "to": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#rollBack",
+      "to": "src/domain/luggage/businessDays.ts#isBusinessDay",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#rollForward",
+      "to": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/businessDays.ts#rollForward",
+      "to": "src/domain/luggage/businessDays.ts#isBusinessDay",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/chargeableWeight.ts#chargeableWeight",
+      "to": "src/domain/luggage/chargeableWeight.ts#DEFAULT_VOLUMETRIC_DIVISOR",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/chargeableWeight.ts#chargeableWeight",
+      "to": "src/domain/luggage/chargeableWeight.ts#EPSILON",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/chargeableWeight.ts#chargeableWeight",
+      "to": "src/domain/luggage/chargeableWeight.ts#Bag",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/chargeableWeight.ts#chargeableWeight",
+      "to": "src/domain/luggage/chargeableWeight.ts#ChargeableWeight",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#CompareInput",
+      "to": "src/domain/luggage/chargeableWeight.ts#Bag",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#CompareInput",
+      "to": "src/domain/luggage/compareOptions.ts#AirlineFees",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#CompareInput",
+      "to": "src/domain/luggage/providers.ts#Provider",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Comparison",
+      "to": "src/domain/luggage/compareOptions.ts#Exclusion",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Comparison",
+      "to": "src/domain/luggage/compareOptions.ts#Option",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Exclusion",
+      "to": "src/domain/luggage/compareOptions.ts#ExclusionReason",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Exclusion",
+      "to": "src/domain/luggage/providers.ts#Direction",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#LegResult",
+      "to": "src/domain/luggage/compareOptions.ts#ExclusionReason",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#LegResult",
+      "to": "src/domain/luggage/compareOptions.ts#Leg",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Leg",
+      "to": "src/domain/luggage/providers.ts#Direction",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Leg",
+      "to": "src/domain/luggage/providers.ts#Route",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#Option",
+      "to": "src/domain/luggage/compareOptions.ts#Leg",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "to": "src/domain/luggage/compareOptions.ts#assertCents",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "to": "src/domain/luggage/compareOptions.ts#compareText",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "to": "src/domain/luggage/compareOptions.ts#legsFor",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "to": "src/domain/luggage/compareOptions.ts#CompareInput",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "to": "src/domain/luggage/compareOptions.ts#Comparison",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#compareOptions",
+      "to": "src/domain/luggage/compareOptions.ts#Option",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#legsFor",
+      "to": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#legsFor",
+      "to": "src/domain/luggage/chargeableWeight.ts#Bag",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#legsFor",
+      "to": "src/domain/luggage/compareOptions.ts#Exclusion",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#legsFor",
+      "to": "src/domain/luggage/compareOptions.ts#Leg",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#legsFor",
+      "to": "src/domain/luggage/providers.ts#Direction",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#legsFor",
+      "to": "src/domain/luggage/providers.ts#Provider",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/chargeableWeight.ts#chargeableWeight",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/compareOptions.ts#fits",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/chargeableWeight.ts#Bag",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/compareOptions.ts#ExclusionReason",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/compareOptions.ts#LegResult",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/providers.ts#Provider",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts#priceLeg",
+      "to": "src/domain/luggage/providers.ts#Route",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts",
+      "to": "src/domain/luggage/chargeableWeight.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/luggage/compareOptions.ts",
+      "to": "src/domain/luggage/providers.ts",
+      "kind": "imports"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#Dims",
+      "to": "src/domain/luggage/providers.ts#Positive",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#Direction",
+      "to": "src/domain/luggage/providers.ts#Route",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#LockerSizesSchema",
+      "to": "src/domain/luggage/providers.ts#Cents",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#LockerSizesSchema",
+      "to": "src/domain/luggage/providers.ts#Dims",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#LockerSizesSchema",
+      "to": "src/domain/luggage/providers.ts#Positive",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#ProviderSchema",
+      "to": "src/domain/luggage/providers.ts#IsoDate",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#ProviderSchema",
+      "to": "src/domain/luggage/providers.ts#Positive",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#ProviderSchema",
+      "to": "src/domain/luggage/providers.ts#RouteSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#ProvidersSchema",
+      "to": "src/domain/luggage/providers.ts#ProviderSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#Provider",
+      "to": "src/domain/luggage/providers.ts#ProviderSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#RouteSchema",
+      "to": "src/domain/luggage/providers.ts#CountryCode",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#RouteSchema",
+      "to": "src/domain/luggage/providers.ts#Dims",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#RouteSchema",
+      "to": "src/domain/luggage/providers.ts#LockerSizesSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#RouteSchema",
+      "to": "src/domain/luggage/providers.ts#Positive",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#RouteSchema",
+      "to": "src/domain/luggage/providers.ts#TransitSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#RouteSchema",
+      "to": "src/domain/luggage/providers.ts#WeightBandsSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#Route",
+      "to": "src/domain/luggage/providers.ts#RouteSchema",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#WeightBandsSchema",
+      "to": "src/domain/luggage/providers.ts#Cents",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#WeightBandsSchema",
+      "to": "src/domain/luggage/providers.ts#Positive",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#parseProviders",
+      "to": "src/domain/luggage/providers.ts#ProvidersSchema",
+      "kind": "references"
+    },
+    {
+      "from": "src/domain/luggage/providers.ts#parseProviders",
+      "to": "src/domain/luggage/providers.ts#Provider",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#ReturnInput",
+      "to": "src/domain/luggage/shippingDates.ts#Transit",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#ReturnResult",
+      "to": "src/domain/luggage/shippingDates.ts#DateFailure",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#SendByInput",
+      "to": "src/domain/luggage/shippingDates.ts#Transit",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#SendByResult",
+      "to": "src/domain/luggage/shippingDates.ts#DateFailure",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#assertTransit",
+      "to": "src/domain/luggage/shippingDates.ts#assertCount",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#assertTransit",
+      "to": "src/domain/luggage/shippingDates.ts#Transit",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#earliestDeliveryForHold",
+      "to": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#earliestDeliveryForHold",
+      "to": "src/domain/luggage/businessDays.ts#rollForward",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#lastCollectionDay",
+      "to": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/businessDays.ts#addBusinessDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/businessDays.ts#assertIsoDate",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/businessDays.ts#rollBack",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/shippingDates.ts#assertCount",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/shippingDates.ts#assertTransit",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/shippingDates.ts#lastCollectionDay",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/shippingDates.ts#ReturnInput",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#returnDropOffDeadline",
+      "to": "src/domain/luggage/shippingDates.ts#ReturnResult",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/businessDays.ts#addBusinessDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/businessDays.ts#addDays",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/businessDays.ts#assertIsoDate",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/businessDays.ts#rollBack",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/shippingDates.ts#assertCount",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/shippingDates.ts#assertTransit",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/shippingDates.ts#earliestDeliveryForHold",
+      "kind": "calls"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/shippingDates.ts#SendByInput",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts#sendByDate",
+      "to": "src/domain/luggage/shippingDates.ts#SendByResult",
+      "kind": "uses-type"
+    },
+    {
+      "from": "src/domain/luggage/shippingDates.ts",
+      "to": "src/domain/luggage/businessDays.ts",
       "kind": "imports"
     },
     {

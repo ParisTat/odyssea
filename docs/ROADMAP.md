@@ -6,6 +6,7 @@ Features are listed one per line, each linking to its plan. When you add an idea
 - [001 · MVP](plans/001-mvp.md): trip list + switcher, itinerary, budget (EUR, with stored FX rates), practical info, Paris as the first trip
 
 ## Next
+- [002 · Luggage shipping](plans/002-luggage-shipping.md): "send it or check it in?" calculator per trip (static provider data), then pickup points, reminders, checklist
 - Paris content: fill in the itinerary once the stay is booked (the area only, never the address)
 - Design polish pass (motion, a11y audit with Lighthouse)
 

@@ -31,3 +31,11 @@ New section template: `docs/templates/handoff-entry.md`.
 - George (`PanagopoulosGeorge`) is invited with write access and needs to accept the invite.
 - `main` is protected: a PR, the `checks` CI job and resolved conversations are required; no approval (since 2026-11-15, so each of us can merge our own PRs). Outsiders without write access can't merge or close our PRs.
 - `"Friend"` in `trip.json` is a placeholder. **George picks his own nickname** (edit `travellers` in `src/data/trips/paris-2026/trip.json`; keep the id `friend`, or update `splitWith`/`paidBy` too).
+
+---
+
+## feat/luggage-shipping · Paris (with Claude) · updated 2026-11-15
+**Plan:** [docs/plans/002-luggage-shipping.md](docs/plans/002-luggage-shipping.md) (steps 1–2 of 8 done)
+**Last done:** research copied to `docs/research/luggage-shipping.md`; plan 002 + ROADMAP line; domain in `src/domain/luggage/` written test-first (chargeable weight, provider zod schema + `src/data/luggage/providers.json`, `compareOptions`, business-day `sendByDate` / `returnDropOffDeadline`). 74 new tests; lint, typecheck, tests, build, graph all green.
+**Next:** the user answers the open questions in the plan and approves the calculator look (mock first); then step 4, the UI per trip (read providers through a small repository, i18n strings, e2e smoke).
+**Blockers / notes:** BOX NOW Medium price and Eurosender Parcel Shop price are unknown (Medium is skipped, null in the data). Business days ignore public holidays. No UI, no CSP change, nothing pushed.
