@@ -1,0 +1,77 @@
+[
+  {
+    "id": "eurosender",
+    "name": "Eurosender",
+    "volumetricDivisor": 5000,
+    "maxKg": 30,
+    "pickupHoldDays": 5,
+    "trustpilot": { "score": 4.1, "reviews": 57000 },
+    "notes": "Aggregator (Mondial Relay, Colissimo, La Poste and others). Prices are from-prices for the Standard service (6-7 business days, max 30 kg). A parcel not collected within 5 days is returned to the sender. Basic insurance up to 200 EUR. Mondial Relay locker limit 64x40x38 cm, 25 kg.",
+    "checkedOn": "2026-11-06",
+    "routes": [
+      {
+        "direction": "outbound",
+        "from": "GR",
+        "to": "FR",
+        "dropOff": "point",
+        "delivery": "point",
+        "transit": { "minDays": 6, "maxDays": 7 },
+        "lockerLimit": { "dimsCm": [64, 40, 38], "maxKg": 25 },
+        "pricing": {
+          "kind": "weight-bands",
+          "bands": [
+            { "upToKg": 2, "priceCents": 1866 },
+            { "upToKg": 5, "priceCents": 2394 },
+            { "upToKg": 10, "priceCents": 3417 },
+            { "upToKg": 30, "priceCents": 10213 }
+          ]
+        }
+      },
+      {
+        "direction": "return",
+        "from": "FR",
+        "to": "GR",
+        "dropOff": "point",
+        "delivery": "point",
+        "transit": { "minDays": 6, "maxDays": 7 },
+        "lockerLimit": { "dimsCm": [64, 40, 38], "maxKg": 25 },
+        "pricing": {
+          "kind": "weight-bands",
+          "bands": [
+            { "upToKg": 2, "priceCents": 2026 },
+            { "upToKg": 5, "priceCents": 2598 },
+            { "upToKg": 10, "priceCents": 3196 },
+            { "upToKg": 30, "priceCents": 12282 }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "boxnow",
+    "name": "BOX NOW",
+    "volumetricDivisor": 5000,
+    "maxKg": 10,
+    "pickupHoldDays": 0,
+    "notes": "Priced by locker size, not weight. Greece to France is delivered to an address only (up to 7 business days; the minimum is not published, 1 is a guess). No return service from Europe to Greece. Small is from 9 EUR, Large is about 25 EUR (a social post), Medium is unknown.",
+    "checkedOn": "2026-11-06",
+    "routes": [
+      {
+        "direction": "outbound",
+        "from": "GR",
+        "to": "FR",
+        "dropOff": "point",
+        "delivery": "address",
+        "transit": { "minDays": 1, "maxDays": 7 },
+        "pricing": {
+          "kind": "locker-sizes",
+          "sizes": [
+            { "id": "small", "dimsCm": [8, 45, 60], "maxKg": 2, "priceCents": 900 },
+            { "id": "medium", "dimsCm": [17, 45, 60], "maxKg": 5, "priceCents": null },
+            { "id": "large", "dimsCm": [36, 45, 60], "maxKg": 10, "priceCents": 2500 }
+          ]
+        }
+      }
+    ]
+  }
+]

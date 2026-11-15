@@ -37,8 +37,9 @@ describe('sendByDate', () => {
   });
 
   test('accepts a custom buffer', () => {
-    const result = sendByDate({ arrival: '2026-12-14', transit, holdDays: null, bufferDays: 2 });
-    expect(result).toMatchObject({ ok: true, sendBy: '2026-12-01' });
+    // Arrival Tue 2026-12-15: a 2-day buffer rolls back to Fri 2026-12-11, minus 7 business days.
+    const result = sendByDate({ arrival: '2026-12-15', transit, holdDays: null, bufferDays: 2 });
+    expect(result).toMatchObject({ ok: true, sendBy: '2026-12-02' });
   });
 });
 
@@ -55,7 +56,7 @@ describe('returnDropOffDeadline', () => {
 
   test('moves earlier when the traveller needs the bag home by a date', () => {
     const result = returnDropOffDeadline({ departure: '2027-01-04', transit, holdDays: 5, homeBy: '2027-01-08' });
-    expect(result).toMatchObject({ ok: true, dropOffBy: '2026-12-29' });
+    expect(result).toMatchObject({ ok: true, dropOffBy: '2026-12-30' });
   });
 
   test('reports when the deadline has already passed', () => {
