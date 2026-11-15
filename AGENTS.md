@@ -90,4 +90,4 @@ e2e/                       # Playwright smoke tests
 
 - Conventional commits: `feat:`, `fix:`, `refactor:`, `docs:`, `test:`, `chore:`. No `Co-Authored-By` trailers.
 - One feature per branch (`feat/...`, `fix/...`). **Never commit to `main`.** Pushing to `main` deploys to production.
-- Open a PR, CI must pass, and the other person reviews. Then merge.
+- Open a PR; CI must pass. The author merges their own PR (no approval required since 2026-11-15); ask the other person for a review when a change is risky or touches their area.
