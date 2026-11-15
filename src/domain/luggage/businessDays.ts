@@ -14,7 +14,16 @@ function parse(date: string): number {
 
 const format = (ms: number): string => new Date(ms).toISOString().slice(0, 10);
 
+export function assertIsoDate(date: string): void {
+  parse(date);
+}
+
+function assertInteger(count: number): void {
+  if (!Number.isInteger(count)) throw new RangeError(`Day count must be an integer, got ${count}`);
+}
+
 export function addDays(date: string, days: number): string {
+  assertInteger(days);
   return format(parse(date) + days * DAY_MS);
 }
 
@@ -24,6 +33,7 @@ export function isBusinessDay(date: string): boolean {
 }
 
 export function addBusinessDays(date: string, count: number): string {
+  assertInteger(count);
   const step = count < 0 ? -1 : 1;
   let current = date;
   for (let left = Math.abs(count); left > 0; ) {

@@ -70,9 +70,14 @@ function priceLeg(provider: Provider, route: Route, bag: Bag): LegResult {
     if (chargeableKg <= provider.maxKg) priceCents = pricing.bands.find((b) => chargeableKg <= b.upToKg)?.priceCents;
   } else {
     reason = 'no-fitting-size';
-    const size = pricing.sizes.find((s) => s.priceCents !== null && bag.actualKg <= s.maxKg && fits(bagDims, s.dimsCm));
-    priceCents = size?.priceCents ?? undefined;
-    sizeId = size?.id ?? null;
+    // The cheapest priced size that fits, whatever the order in the data.
+    for (const size of pricing.sizes) {
+      if (size.priceCents === null || bag.actualKg > size.maxKg || !fits(bagDims, size.dimsCm)) continue;
+      if (priceCents === undefined || size.priceCents < priceCents) {
+        priceCents = size.priceCents;
+        sizeId = size.id;
+      }
+    }
   }
   if (priceCents === undefined) return { reason };
 
@@ -107,6 +112,8 @@ function legsFor(providers: Provider[], bag: Bag, direction: Direction) {
   return { legs, excluded };
 }
 
+const compareText = (a: string, b: string): number => (a < b ? -1 : a > b ? 1 : 0);
+
 function assertCents(value: number): void {
   if (!Number.isInteger(value) || value < 0) throw new RangeError('Airline fees must be non-negative integer cents');
 }
@@ -133,7 +140,13 @@ export function compareOptions({ bag, airline, providers }: CompareInput): Compa
         };
       }),
     )
-    .sort((a, b) => a.totalCents - b.totalCents);
+    .sort(
+      (a, b) =>
+        a.totalCents - b.totalCents ||
+        Number(b.pointToPoint) - Number(a.pointToPoint) ||
+        compareText(a.outbound.providerId, b.outbound.providerId) ||
+        compareText(a.return.providerId, b.return.providerId),
+    );
 
   return {
     airlineTotalCents,
