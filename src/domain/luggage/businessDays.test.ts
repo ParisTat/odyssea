@@ -29,6 +29,19 @@ describe('businessDays', () => {
     expect(rollForward('2026-11-18')).toBe('2026-11-18');
   });
 
+  test('handles leap years', () => {
+    expect(addDays('2028-02-28', 1)).toBe('2028-02-29');
+    expect(addDays('2028-02-29', 1)).toBe('2028-03-01');
+    expect(() => addDays('2027-02-29', 1)).toThrow(RangeError);
+  });
+
+  test('rejects non-integer and infinite counts', () => {
+    expect(() => addDays('2026-11-16', 1.5)).toThrow(RangeError);
+    expect(() => addBusinessDays('2026-11-16', 0.5)).toThrow(RangeError);
+    expect(() => addBusinessDays('2026-11-16', Infinity)).toThrow(RangeError);
+    expect(() => addBusinessDays('2026-11-16', Number.NaN)).toThrow(RangeError);
+  });
+
   test('rejects malformed dates', () => {
     expect(() => addDays('16/11/2026', 1)).toThrow(RangeError);
     expect(() => addDays('2026-02-31', 1)).toThrow(RangeError);

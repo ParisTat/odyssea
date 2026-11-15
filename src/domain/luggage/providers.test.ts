@@ -50,6 +50,43 @@ describe('providers data', () => {
     expect(() => parseProviders(data)).toThrow();
   });
 
+  test('rejects unknown keys', () => {
+    const data = clone();
+    data[0].surprise = true;
+    expect(() => parseProviders(data)).toThrow();
+    const route = clone();
+    (route[0].routes as Record<string, unknown>[])[0].extra = 1;
+    expect(() => parseProviders(route)).toThrow();
+  });
+
+  test('rejects duplicate provider ids', () => {
+    const data = clone();
+    data[1].id = data[0].id;
+    expect(() => parseProviders(data)).toThrow(/unique/);
+  });
+
+  test('rejects a duplicate route for the same direction and countries', () => {
+    const data = clone();
+    const routes = data[0].routes as unknown[];
+    routes.push(structuredClone(routes[0]));
+    expect(() => parseProviders(data)).toThrow(/Duplicate route/);
+  });
+
+  test('rejects lowercase or malformed country codes', () => {
+    const lower = clone();
+    (lower[0].routes as Record<string, unknown>[])[0].from = 'gr';
+    expect(() => parseProviders(lower)).toThrow();
+    const long = clone();
+    (long[0].routes as Record<string, unknown>[])[0].to = 'FRA';
+    expect(() => parseProviders(long)).toThrow();
+  });
+
+  test('rejects a maxKg below the last weight band', () => {
+    const data = clone();
+    data[0].maxKg = 25;
+    expect(() => parseProviders(data)).toThrow(/maxKg/);
+  });
+
   test('rejects a transit range where min is above max', () => {
     const data = clone();
     (data[0].routes as { transit: unknown }[])[0].transit = { minDays: 9, maxDays: 2 };
